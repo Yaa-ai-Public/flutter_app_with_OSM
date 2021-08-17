@@ -30,10 +30,10 @@ class _what3wordsState extends State<what3words> {
     final length = MediaQuery.of(context).size;
     return new Scaffold(
       body:
-          FlutterMap(options: MapOptions(center: new LatLng(28.3949, 84.1240)), layers: [
+          FlutterMap(options: MapOptions(center: new LatLng(27.69384, 85.31411)), layers: [
         TileLayerOptions(
             minZoom: 1,
-            maxZoom: 10,
+            maxZoom: 18,
             backgroundColor: Colors.white,
             urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             subdomains: ['a', 'b', 'c']),
@@ -41,7 +41,7 @@ class _what3wordsState extends State<what3words> {
           Marker(
             width: 80.0,
             height: 80.0,
-            point: LatLng(28.3949, 84.1240),
+            point: LatLng(27.69384, 85.31411),
             builder: (ctx) => Icon(
               Icons.pin_drop,
               size: 50,
