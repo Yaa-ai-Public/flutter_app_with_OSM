@@ -14,7 +14,11 @@ packages:
       name: async
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.8.1"
+=======
+    version: "2.6.1"
+>>>>>>> ca09a7c14dd27249fd6a6d70c04719114fe22927
   boolean_selector:
     dependency: transitive
     description:
@@ -35,7 +39,11 @@ packages:
       name: charcode
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "1.3.1"
+=======
+    version: "1.2.0"
+>>>>>>> ca09a7c14dd27249fd6a6d70c04719114fe22927
   clock:
     dependency: transitive
     description:
@@ -171,7 +179,11 @@ packages:
       name: meta
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "1.7.0"
+=======
+    version: "1.3.0"
+>>>>>>> ca09a7c14dd27249fd6a6d70c04719114fe22927
   mgrs_dart:
     dependency: transitive
     description:
@@ -186,6 +198,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+<<<<<<< HEAD
   pedantic:
     dependency: transitive
     description:
@@ -193,6 +206,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.11.1"
+=======
+>>>>>>> ca09a7c14dd27249fd6a6d70c04719114fe22927
   positioned_tap_detector:
     dependency: transitive
     description:
@@ -267,7 +282,11 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "0.4.2"
+=======
+    version: "0.3.0"
+>>>>>>> ca09a7c14dd27249fd6a6d70c04719114fe22927
   transparent_image:
     dependency: "direct main"
     description:
