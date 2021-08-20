@@ -25,31 +25,53 @@ class what3words extends StatefulWidget {
 }
 
 class _what3wordsState extends State<what3words> {
+  double long = 49.5;
+  double lat = -0.90;
+  LatLng point = LatLng(49.5, -0.09);
+  var location = [];
+
   @override
   Widget build(BuildContext context) {
     final length = MediaQuery.of(context).size;
     return new Scaffold(
-      body:
-          FlutterMap(options: MapOptions(center: new LatLng(28.3949, 84.1240)), layers: [
-        TileLayerOptions(
-            minZoom: 1,
-            maxZoom: 10,
-            backgroundColor: Colors.white,
-            urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-            subdomains: ['a', 'b', 'c']),
-        MarkerLayerOptions(markers: [
-          Marker(
-            width: 80.0,
-            height: 80.0,
-            point: LatLng(28.3949, 84.1240),
-            builder: (ctx) => Icon(
-              Icons.pin_drop,
-              size: 50,
-              color: Colors.red,
-            ),
-          )
-        ]),
-      ]),
+      body: Stack(
+        children: [
+          FlutterMap(
+              options: MapOptions(
+
+                  zoom: 5.0,
+                  center: point,),
+              layers: [
+                TileLayerOptions(
+                    backgroundColor: Colors.white,
+                    urlTemplate:
+                        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                    subdomains: ['a', 'b', 'c']),
+                MarkerLayerOptions(markers: [
+                  Marker(
+                    width: 80.0,
+                    height: 80.0,
+                    point: LatLng(49.025, -0.09),
+                    builder: (ctx) => Icon(
+                      Icons.pin_drop,
+                      size: 50,
+                      color: Colors.red,
+                    ),
+                  ),
+                  Marker(
+                    width: 80.0,
+                    height: 80.0,
+                    point: LatLng(49.00252, -0.00090),
+                    builder: (ctx) => Icon(
+                      Icons.pin_drop,
+                      size: 50,
+                      color: Colors.blue,
+                    ),
+                  )
+                ]),
+              ]),
+        ],
+      ),
     );
   }
 }
